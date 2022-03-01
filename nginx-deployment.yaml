@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   labels:
-    env: dev
+    env: Test
 spec:
   replicas: 3
   selector:
     matchLabels:
-      env: dev
+      env: Test
   template:
     metadata:
       labels:
-        env: dev
+        env: Test
     spec:
       containers:
       - name: nginx
